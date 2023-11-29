@@ -4,7 +4,7 @@ const typeDefs = `
     username: String!
     email: String
     bookCount: Int
-    saveBooks: [Book]
+    savedBooks: [Book]  # Corrected field name
   }
 
   type Book {
@@ -21,14 +21,14 @@ const typeDefs = `
     user: User
   }
 
-  input BookInput{
+  input BookInput {
     authors: [String]
     description: String!
     title: String!
     bookId: String!
     image: String
     link: String
-  } 
+  }
 
   type Query {
     me: User
